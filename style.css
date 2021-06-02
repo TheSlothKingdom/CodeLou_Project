@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+#pow_pic {
+    max-width: 50%;
+    
+}
+
+.comicls,
+.comic_par {
+    display: flex;
+}
+
+.comic_par {
+    background-color: lightblue;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comicls {
+    color: chocolate;
+}
+
+.comics {
+    color: brown;
+    border: 5px dashed red;
+    flex-grow: 1;
+}
+
+.main_content {
+    
+}
+
+footer {
+    margin-top: auto;
+}
+
+
