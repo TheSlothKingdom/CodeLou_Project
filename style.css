@@ -29,7 +29,8 @@
 }
 
 .main_content {
-    
+    font-family: 'Montserrat', sans-serif; /* google fonts */
+    font-weight: 400;
 }
 
 footer {
