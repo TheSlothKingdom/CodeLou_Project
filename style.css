@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+#navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+.navitem {
+    flex: 1 50%;
+    margin: auto;
+}
+
 #pow_pic {
     max-width: 50%;
     
