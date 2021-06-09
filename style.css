@@ -5,12 +5,18 @@
 #navbar {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     height: 100%;
+    list-style-type: none;
+    padding: 0;
+
 }
 
 .navitem {
-    flex: 1 50%;
-    margin: auto;
+    flex: 1 1 40%;
+    margin: 10px 5%;
+    border-style: solid;
+    text-align: center;
 }
 
 #pow_pic {
