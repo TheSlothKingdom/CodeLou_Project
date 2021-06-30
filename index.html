@@ -10,30 +10,47 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
 <body>
+    <!-- Top of page. Needs a title, nav bar, and maybe an img -->
     <header>
         <div id="header">
             <h1>Joel Murtaugh</h1>
-            <ul id="navbar">
-                <li class="navitem"><a href="#">About Me</a></li>
-                <li class="navitem"><a href="#">Compositions</a></li>
-                <li class="navitem"><a href="#">Gigs</a></li>
-                <li class="navitem"><a href="#">Contact Me</a></li>
-            </ul>
             <img src="#" alt="Picture of Joel Murtaugh.">
+            <nav>
+                <ul id="navbar">
+                    <li class="navitem"><a href="#">About Me</a></li>
+                    <li class="navitem"><a href="#">Compositions</a></li>
+                    <li class="navitem"><a href="#">Gigs</a></li>
+                    <li class="navitem"><a href="#">Contact Me</a></li>
+                    <li class="navitem"><a href="#">Lessons</a></li>
+                </ul>
+            </nav>
         </div>
     </header> 
-    
+    <!-- Bio section. Include link to the contact portion of the page.  -->
     <div class="content">
         <h2>About me</h2>
         <p>
             Joel Murtaugh comes from Southeast Kentucky and is currently located in Louisville, Kentucky. As a bassist he has had expreience playing jazz, theatre, rock, pop, and improvasational styles. His compositions draw upon the rich history of American music while aiming for something personal and unique. You can get into contact with Joel <a href="#">here!</a>
         </p>
     </div>
-    
+    <!-- shows all upcoming gigs. Some interactive calendar would be nice.-->
+    <h2>Upcoming Shows</h2>
+        <ul class="content">
+        <li>dates for gigs</li>
+        <li>dates for gigs</li>
+        <li>dates for gigs</li>
+        <li>dates for gigs</li>
+    </ul>
+
+    <!-- following img could be removed for another content divider -->
     <img id="pow_pic" src="images/stop-comic.jpg" alt="Stop Comic!" title="Stop Comic!">
-    
+
+    <!-- Section for lessons: teaching background, instruments, styles -->
+    <h2>Lessons</h2>
+
+    <!-- compositions. Need imgs of the music and the youtube video from UofL -->
+    <h2>Compositions</h2>
     <div class="content"> 
         <img src="#" alt="Joel's compositions.">
         <video src="#"></video>
@@ -41,14 +58,31 @@
             Say things here about the compositions.
         </p>
     </div>
+    <!-- the contact form. This will have javascript inside of it -->
+    <h2>Contact Me</h2>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="fullname" placeholder="Gandalf the Wise"><br>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email" placeholder="Frodo@TheShire.com">
+        <fieldset>
+            <legend>Why are you wanting to get a hold of me?</legend>
+            <input type="checkbox" name="for-gigs" id="for-gigs">
+            <label for="for-gigs">gigs</label>
 
-    <ul class="content">
-        <li>dates for gigs</li>
-        <li>dates for gigs</li>
-        <li>dates for gigs</li>
-        <li>dates for gigs</li>
-    </ul>
-    <p>contact me!</p>
+            <input type="checkbox" name="for-lessons" id="for-lessons">
+            <label for="for-lessons">lessons</label>
+
+            <input type="checkbox" name="for-comp" id="for-comp">
+            <label for="for-comp">compositions</label>
+
+            <input type="checkbox" name="for-other" id="for-other">
+            <label for="for-other">other</label>
+        </fieldset>
+        <label for="other-text">Tell me anything</label><br>
+        <textarea name="other-text" id="other-text"></textarea>
+        <input type="submit" name="submit" id="submit">
+    </form>
     
     <footer>
         <img src="#" alt="picture of a bass">
