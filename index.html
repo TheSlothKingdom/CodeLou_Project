@@ -11,11 +11,12 @@
     <title>Document</title>
 </head>
 <body>
+<div class="container">
     <!-- Top of page. Needs a title, nav bar, and maybe an img -->
     <header>
-        <div id="header">
+        <div>
             <h1>Joel Murtaugh</h1>
-            <img src="#" alt="Picture of Joel Murtaugh.">
+            <img src="images/headshot.jpg" alt="Picture of Joel Murtaugh.">
             <nav>
                 <ul id="navbar">
                     <li class="navitem"><a href="#">About Me</a></li>
@@ -35,66 +36,73 @@
         </p>
     </div>
     <!-- shows all upcoming gigs. Some interactive calendar would be nice.-->
-    <h2>Upcoming Shows</h2>
-    <ul class="content">
-        <li>July 27, 2021 at The Piano Park</li>
-        <li>August 27, 2021 at O'Neils</li>
-        <li>September 25, 2021 at Pridefest</li>
-        <li>October 15, 2021 at The Burl</li>
-    </ul>
+    <div>
+        <h2>Upcoming Shows</h2>
+        <ul class="content">
+            <li>July 27, 2021 at The Piano Park</li>
+            <li>August 27, 2021 at O'Neils</li>
+            <li>September 25, 2021 at Pridefest</li>
+            <li>October 15, 2021 at The Burl</li>
+        </ul>
+    </div>
 
     <!-- An image of some sort could be added here but may not be needed -->
-    <hr>
+    
     <!-- Section for lessons: teaching background, instruments, styles -->
-    <h2>Lessons</h2>
-    <p>Joel is able to teach the following instruments:</p>
-    <ul>
-        <li>Bass</li>
-        <li>Guitar</li>
-        <li>Uke</li>
-        <li>Manodlin</li>
-    </ul>
-    <p>Joel is very comfortable with begginners and intermediate players looking to better play the music that they want to play.</p>
-
+    <div>
+        <h2>Lessons</h2>
+        <p>Joel is able to teach the following instruments:</p>
+        <ul>
+            <li>Bass</li>
+            <li>Guitar</li>
+            <li>Uke</li>
+            <li>Manodlin</li>
+        </ul>
+        <p>Joel is very comfortable with begginners and intermediate players looking to better play the music that they want to play.</p>
+    </div>
     <!-- compositions. Need imgs of the music and the youtube video from UofL -->
-    <h2>Compositions</h2>
-    <div class="content"> 
-        <img src="images/a-sweet_fog.jpg" alt="Composition by Joel titled 'a sweet fog.'">
-        <img src="images/Golden_Apples.jpg" alt="Composition by Joel titled 'Golden Apples.'">
+    <div>
+        <h2>Compositions</h2>
+        <div class="content"> 
+            <img src="images/a-sweet_fog.jpg" alt="Composition by Joel titled 'a sweet fog.'">
+            <img src="images/Golden_Apples.jpg" alt="Composition by Joel titled 'Golden Apples.'">
 
-        <p>
-            The above pieces are originals by Joel and can be played by any instrumentations by following the chords and melody. 
-        </p>
+            <p>
+                The above pieces are originals by Joel and can be played by any instrumentations by following the chords and melody. 
+            </p>
+        </div>
     </div>
     <!-- the contact form. This will have javascript inside of it -->
-    <h2>Contact Me</h2>
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="fullname" placeholder="Gandalf the Wise"><br>
-        <label for="email">Enter your email</label>
-        <input type="email" id="email" name="email" placeholder="Frodo@TheShire.com">
-        <fieldset>
-            <legend>Why are you wanting to get a hold of me?</legend>
-            <input type="checkbox" name="for-gigs" id="for-gigs">
-            <label for="for-gigs">gigs</label>
+    <div>
+        <h2>Contact Me</h2>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="fullname" placeholder="Gandalf the Wise"><br>
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" name="email" placeholder="Frodo@TheShire.com">
+            <fieldset>
+                <legend>Why are you wanting to get a hold of me?</legend>
+                <input type="checkbox" name="for-gigs" id="for-gigs">
+                <label for="for-gigs">gigs</label>
 
-            <input type="checkbox" name="for-lessons" id="for-lessons">
-            <label for="for-lessons">lessons</label>
+                <input type="checkbox" name="for-lessons" id="for-lessons">
+                <label for="for-lessons">lessons</label>
 
-            <input type="checkbox" name="for-comp" id="for-comp">
-            <label for="for-comp">compositions</label>
+                <input type="checkbox" name="for-comp" id="for-comp">
+                <label for="for-comp">compositions</label>
 
-            <input type="checkbox" name="for-other" id="for-other">
-            <label for="for-other">other</label>
-        </fieldset>
-        <label for="other-text">Tell me anything</label><br>
-        <textarea name="other-text" id="other-text"></textarea>
-        <input type="submit" name="submit" id="submit">
-    </form>
-    
+                <input type="checkbox" name="for-other" id="for-other">
+                <label for="for-other">other</label>
+            </fieldset>
+            <label for="other-text">Tell me anything</label><br>
+            <textarea name="other-text" id="other-text"></textarea>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+
     <footer>
         <img src="#" alt="picture of a bass">
     </footer>
-
+</div>
 </body>
 </html>
