@@ -1,14 +1,56 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    width: 700px;
+    margin: auto;
+}
 .container {
     display: grid;
+    margin: auto;
+    width: 90%;
     grid-template-columns: 1fr;
+    grid-template-areas: 
+    'header'
+    'bio'
+    'shows'
+    'lessons'
+    'compositions'
+    'contact-me'
+    'footer';
+}
+
+header {
+    grid-area: header;
 }
 
 #navbar {
     display: flex;
+    justify-content: space-evenly;
+}
+
+#bio {
+    grid-area: bio;
+}
+
+#shows {
+    grid-area: shows;
+}
+
+#lessons {
+    grid-area: lessons;
+}
+
+#compositions {
+    grid-area: compositions;
+}
+
+#contact-me {
+    grid-area: contact-me;
+}
+
+footer {
+    grid-area: footer;
 }
 
 img {
