@@ -1,10 +1,13 @@
+/* General Styles */
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    
+    background-color: rosybrown;
 }
+
 .container {
     display: grid;
     margin: auto;
@@ -31,7 +34,7 @@ header {
 
 #navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
 
 #bio {
@@ -62,7 +65,9 @@ img {
     max-width: 20%;
 }
 
-@media (min-width: 768px) {
+/* Media Queries */
+
+@media (min-width: 650px) {
     .container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
