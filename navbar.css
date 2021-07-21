@@ -37,5 +37,6 @@
 }
 
 .show {
-    display: block;
+    display: flex;
+    justify-content: space-evenly; 
 }
