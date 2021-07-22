@@ -5,7 +5,11 @@
 }
 
 body {
-    background-color: rosybrown;
+    background-color: #BF988F;
+}
+
+h2 {
+    background-color: #48590A;
 }
 
 .container {
@@ -26,7 +30,8 @@ body {
 }
 
 .section {
-    background-color: turquoise;
+    background-color: #8C635A;
+    height: 100vh;
 }
 
 header {
