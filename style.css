@@ -22,7 +22,7 @@ h2 {
 }
 
 img {
-    max-width: 25%;
+    max-width: 35%;
 }
 
 p, ul, form {
@@ -88,6 +88,8 @@ header img {
 
 #bio p {
     line-height: 1.5em;
+    overflow: auto;
+    max-height: 75%;
 }
 
 /* Upcoming Shows */
@@ -99,6 +101,8 @@ header img {
 #shows ul {
     line-height: 2em;
     list-style-position: inside;
+    overflow: auto;
+    max-height: 75%;
 }
 
 /* Lessons */
@@ -107,7 +111,13 @@ header img {
     grid-area: lessons;
 }
 
+#lessons div {
+    overflow: auto;
+    max-height: 75%;
+}
+
 #lessons p:first-of-type {
+    margin-top: 0;
     margin-bottom: 0px;
     border-radius: 10px 10px 0 0;
 }
@@ -128,6 +138,11 @@ header img {
 
 #compositions {
     grid-area: compositions;
+}
+
+.orgImgs {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Contact-Me */
@@ -163,8 +178,8 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         'header header header'
-        'bio bio bio'
-        'shows lessons compositions'
+        'bio bio shows'
+        'lessons compositions compositions'
         'contact-me contact-me contact-me'
         'footer footer footer';
     }
