@@ -2,15 +2,37 @@
 
 * {
     box-sizing: border-box;
+    font-weight: 400;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #282C3E;
 }
 
 body {
-    background-color: #BF988F;
+    background-color: #809848;
 }
 
 h2 {
-    background-color: #48590A;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    color: white;
 }
+
+img {
+    max-width: 25%;
+}
+
+p, ul, form {
+    background-color: #B5DEAD;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+/* Page Layout */
 
 .container {
     display: grid;
@@ -30,41 +52,96 @@ h2 {
 }
 
 .section {
-    background-color: #8C635A;
+    background-color: #282C3E;
     height: 100vh;
+    padding-right: 5%;
+    padding-left: 5%;
 }
+
+ /* header */
 
 header {
     grid-area: header;
 }
 
+header h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3em;
+    color: white;
+}
+
+header img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+/* About Me */
+
 #bio {
     grid-area: bio;
 }
+
+#bio p {
+    line-height: 1.5em;
+}
+
+/* Upcoming Shows */
 
 #shows {
     grid-area: shows;
 }
 
+#shows ul {
+    line-height: 2em;
+    list-style-position: inside;
+}
+
+/* Lessons */
+
 #lessons {
     grid-area: lessons;
 }
+
+#lessons p:first-of-type {
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0 0;
+}
+
+#lessons ul {
+    line-height: 2em;
+    list-style-position: inside;
+    margin: 0;
+    border-radius: 0;
+}
+
+#lessons p:last-child {
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+ /* Compositions */
 
 #compositions {
     grid-area: compositions;
 }
 
+/* Contact-Me */
+
 #contact-me {
     grid-area: contact-me;
 }
+
+/* footer */
 
 footer {
     grid-area: footer;
 }
 
-img {
-    max-width: 20%;
-}
 
 /* Media Queries */
 
