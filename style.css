@@ -5,7 +5,8 @@
     font-weight: 400;
 }
 
-a:link, a:visited {
+a:link, 
+a:visited {
     text-decoration: none;
     color: #282C3E;
 }
@@ -22,7 +23,8 @@ h2 {
 }
 
 img {
-    max-width: 35%;
+    border-radius: 10px;
+    width: 35%;
 }
 
 p, ul, form {
@@ -72,12 +74,11 @@ header h1 {
 }
 
 header img {
-    max-width: 50%;
+    width: 50%;
     height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 8px;
 }
 
 /* About Me */
@@ -151,6 +152,15 @@ header img {
     grid-area: contact-me;
 }
 
+input[type="text"],
+input[type="email"],
+fieldset,
+textarea,
+input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 /* footer */
 
 footer {
@@ -167,8 +177,7 @@ footer {
         'header header'
         'bio bio'
         'shows lessons'
-        'compositions compositions'
-        'contact-me contact-me'
+        'compositions contact-me'
         'footer footer';
     }
 }
@@ -179,8 +188,16 @@ footer {
         grid-template-areas: 
         'header header header'
         'bio bio shows'
-        'lessons compositions compositions'
-        'contact-me contact-me contact-me'
+        'lessons compositions contact-me'
         'footer footer footer';
     }
 }
+
+
+
+/* CSS HEX
+--space-cadet: #282c3eff;
+--moss-green: #809848ff;
+--olivine: #b0ca87ff;
+--celadon: #b5deadff;
+--pewter-blue: #7ca5b8ff; */
