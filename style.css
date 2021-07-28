@@ -59,6 +59,10 @@ p, ul, form {
     padding-left: 5%;
 }
 
+.section:first-of-type {
+    min-height: 750px;
+}
+
  /* header */
 
 header {
@@ -189,6 +193,12 @@ input[type="submit"] {
         'shows lessons'
         'compositions contact-me';
     }
+    .dropbtn {
+        display: none;}
+
+    .showBig {
+        display: grid;
+    }
 }
 
 @media (min-width: 992px) {
@@ -200,12 +210,3 @@ input[type="submit"] {
         'lessons compositions contact-me';
     }
 }
-
-
-
-/* CSS HEX
---space-cadet: #282c3eff;
---moss-green: #809848ff;
---olivine: #b0ca87ff;
---celadon: #b5deadff;
---pewter-blue: #7ca5b8ff; */

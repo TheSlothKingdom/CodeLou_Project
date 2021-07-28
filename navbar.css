@@ -48,3 +48,10 @@
     position: absolute;
     top: 40px;
 }
+
+.showBig {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 40px;
+}
