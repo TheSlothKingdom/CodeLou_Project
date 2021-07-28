@@ -63,7 +63,7 @@ const displayValues = function(e) {
     e.preventDefault();
     if (validateName(e) == true && validateEmail(e) == true && validateCb() == true) {
         formInfo.style.display = 'block'
-        formInfo.innerHTML = 'Thank you ' + nameValue + ' I will be returning a message to ' + emailValue + 'as soon as I can!';
+        formInfo.innerHTML = 'Thank you ' + nameValue + ' I will be returning a message to ' + emailValue + ' as soon as I can!';
     }
 }
 

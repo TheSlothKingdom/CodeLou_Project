@@ -194,11 +194,13 @@ input[type="submit"] {
         'compositions contact-me';
     }
     .dropbtn {
-        display: none;}
-
-    .showBig {
-        display: grid;
+        display: none;
     }
+
+    #navbar {
+            display: flex;
+            top: 10px;
+        }
 }
 
 @media (min-width: 992px) {
@@ -208,5 +210,13 @@ input[type="submit"] {
         'header header header'
         'bio bio shows'
         'lessons compositions contact-me';
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    header img {
+        max-height: 620px;
     }
 }

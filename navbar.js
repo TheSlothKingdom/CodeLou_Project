@@ -14,3 +14,9 @@ window.onclick = function(event) {
         }
     }
 }
+
+// window.addEventListener('resize', showBig ()) 
+//     if (window.innerwidth > 650) {
+//         const navigation = document.getElementById("navbar");
+//         navigation.classList.add("show");
+//     };
