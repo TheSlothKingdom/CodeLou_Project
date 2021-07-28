@@ -1,21 +1,24 @@
-const modal = document.getElementById("modalOne");
-
+const modalOne = document.getElementById("modalOne");
 const musicOne = document.getElementById("musicOne");
 const imgOne = document.getElementById("imgOne");
 musicOne.onclick = function() {
-    modal.style.display = "block";
+    modalOne.style.display = "block";
     imgOne.src = this.src;
 }
 
+const modalTwo = document.getElementById("modalTwo");
 const musicTwo = document.getElementById('musicTwo');
 const imgTwo = document.getElementById('imgTwo');
 musicTwo.onclick = function () {
-    modal.style.display = "block";
+    modalTwo.style.display = "block";
     imgTwo.src = this.src;
 }
 
-const span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-    modal.style.display = "none";
+const spanOne = document.getElementsByClassName("close")[0];
+const spanTwo = document.getElementsByClassName("close")[1];
+spanOne.onclick = function() {
+    modalOne.style.display = "none";
+}
+spanTwo.onclick = function() {
+    modalTwo.style.display = "none";
 }

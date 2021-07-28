@@ -115,6 +115,7 @@ header img {
 #lessons div {
     overflow: auto;
     max-height: 75%;
+    border-radius: 10px;
 }
 
 #lessons p:first-of-type {
@@ -152,6 +153,11 @@ header img {
     grid-area: contact-me;
 }
 
+form {
+    overflow: auto;
+    max-height: 75%;
+}
+
 input[type="text"],
 input[type="email"],
 fieldset,
@@ -160,6 +166,13 @@ input[type="submit"] {
     width: 100%;
     margin-bottom: 10px;
 }
+
+.error {
+    color: red;
+    font-size: .8em;
+    display: none;
+}
+
 
 /* footer */
 

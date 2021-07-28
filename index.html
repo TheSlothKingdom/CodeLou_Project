@@ -90,16 +90,19 @@
         <!-- the contact form. This will have javascript inside of it -->
         <div id="contact-me" class='section'>
             <h2>Contact Me</h2>
-            <form action="">
+            <form action="" class="form">
                 <label for="name">Name</label>
+                <span class="error" id="nameError">Enter your name</span>
                 <input type="text" id="name" name="fullname" placeholder="Gandalf the Wise"><br>
                 <label for="email">Email</label>
+                <span class="error" id="emailError">Enter a valid email</span>
                 <input type="email" id="email" name="email" placeholder="Frodo@TheShire.com">
                 <fieldset>
                     <legend>Why are you contacting me?</legend>
                     <div id="checkbox">
                         <input type="checkbox" name="for-gigs" id="for-gigs">
-                        <label for="for-gigs">Gigs</label><br>
+                        <label for="for-gigs">Gigs</label>
+                        <span id="cbError" class="error">Check one box</span><br>
 
                         <input type="checkbox" name="for-lessons" id="for-lessons">
                         <label for="for-lessons">Lessons</label><br>
@@ -115,6 +118,7 @@
                 <textarea name="other-text" id="other-text"></textarea>
                 <input type="submit" name="submit" id="submit">
             </form>
+            <p class="formInfo"></p>
         </div>
 
         <footer class='section'>
@@ -123,5 +127,6 @@
     </div>
     <script src="navbar.js"></script>
     <script src="modal.js"></script>
+    <script src="validate.js"></script>
 </body>
 </html>
