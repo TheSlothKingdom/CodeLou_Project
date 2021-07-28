@@ -49,8 +49,7 @@ p, ul, form {
     'shows'
     'lessons'
     'compositions'
-    'contact-me'
-    'footer';
+    'contact-me';
 }
 
 .section {
@@ -153,7 +152,7 @@ header img {
     grid-area: contact-me;
 }
 
-form {
+.form-flow {
     overflow: auto;
     max-height: 75%;
 }
@@ -173,13 +172,11 @@ input[type="submit"] {
     display: none;
 }
 
-
-/* footer */
-
-footer {
-    grid-area: footer;
+#formInfo {
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
 }
-
 
 /* Media Queries */
 
@@ -190,8 +187,7 @@ footer {
         'header header'
         'bio bio'
         'shows lessons'
-        'compositions contact-me'
-        'footer footer';
+        'compositions contact-me';
     }
 }
 
@@ -201,8 +197,7 @@ footer {
         grid-template-areas: 
         'header header header'
         'bio bio shows'
-        'lessons compositions contact-me'
-        'footer footer footer';
+        'lessons compositions contact-me';
     }
 }
 

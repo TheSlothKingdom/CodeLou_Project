@@ -53,4 +53,18 @@ submitBtn.addEventListener('click', validateCb);
 
 // Retrieve Information and display it below the form.
 
- 
+const displayValues = function(e) {
+    const form = document.getElementsByClassName('form')[0];
+    let formInfo = document.getElementById('formInfo');
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');    
+    const nameValue = name.value;
+    const emailValue = email.value;
+    e.preventDefault();
+    if (validateName(e) == true && validateEmail(e) == true && validateCb() == true) {
+        formInfo.style.display = 'block'
+        formInfo.innerHTML = 'Thank you ' + nameValue + ' I will be returning a message to ' + emailValue + 'as soon as I can!';
+    }
+}
+
+submitBtn.addEventListener('click', displayValues);
